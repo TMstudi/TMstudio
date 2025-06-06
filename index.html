@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>TMstudio Захиалга</title>
+<style>
+  body { font-family: Arial, sans-serif; background: linear-gradient(135deg, #f6d365 0%, #fda085 100%); color: #333; margin:0; padding:0;}
+  .container { max-width: 500px; margin: 40px auto; background: white; border-radius: 10px; padding: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.2);}
+  h1 { text-align: center; color: #ff5e57;}
+  label { display: block; margin-top: 15px; font-weight: bold;}
+  input, textarea { width: 100%; padding: 10px; margin-top: 5px; border-radius: 5px; border: 1px solid #ccc; }
+  button { margin-top: 20px; width: 100%; background: #ff5e57; border:none; padding: 12px; color: white; font-size: 18px; border-radius: 8px; cursor: pointer;}
+  button:hover { background: #e14c4c;}
+  footer {text-align:center; margin-top:30px; font-size: 14px; color: #777;}
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>TMstudio Захиалга</h1>
+  <form action="https://formsubmit.co/tmcreativestudio1@gmail.com" method="POST">
+    <label for="name">Нэр:</label>
+    <input type="text" id="name" name="name" required />
+    
+    <label for="description">Тайлбар:</label>
+    <textarea id="description" name="description" rows="4" required></textarea>
+    
+    <label for="ig">Instagram хаяг:</label>
+    <input type="text" id="ig" name="instagram" required />
+    
+    <!-- FormSubmit-д зориулсан нууц тохиргоо -->
+    <input type="hidden" name="_captcha" value="false" />
+    <input type="hidden" name="_next" value="https://tmstudio.netlify.app/thanks.html" />
+    
+    <button type="submit">Захиалга илгээх</button>
+  </form>
+</div>
+<footer>© 2025 TMstudio</footer>
+</body>
+</html>
